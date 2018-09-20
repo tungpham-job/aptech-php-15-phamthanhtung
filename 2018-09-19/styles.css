@@ -1,0 +1,27 @@
+.Header {
+    background-color: peru;
+    height: 200px;
+    font-size: 30px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Picsheet {
+    background-color:antiquewhite;
+    height: 400px;
+    width:40%;
+    float:left;
+    text-align: center;
+}
+.Pic {
+    padding:20px;
+}
+
+.Content {
+    background-color:antiquewhite;
+    height: 400px;
+    width:60%;
+    float:right; 
+}

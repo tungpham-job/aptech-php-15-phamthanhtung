@@ -1,0 +1,74 @@
+.Header {
+    background-color: wheat;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.reds {
+    height: 150px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px; 
+}
+.pinks {
+    height: 150px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pink {
+    background-color: pink;
+    height: 100%;
+    width: 100%;
+    margin-right: 20px;
+}
+.Content1 {
+    background-color: wheat;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.blues {
+    background-color: blue;
+    height: 150px;
+    width:90%;
+}
+.Content2 {
+    background-color: wheat;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.oranges {
+    height: 150px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.orange {
+    background-color: orange;
+    height: 100%;
+    width:30%;
+}
+
+.yellows {
+    background-color: yellow;
+    height: 20%;
+    width:30%;
+}
