@@ -27,7 +27,7 @@ body {
     align-items: center;
 }
 .red {
-    background-color: gray;
+    background-color: #097479;
     height: 100%;
     width: 100%;
     margin-right: 10px;
@@ -144,5 +144,5 @@ body {
     width:100px;
 }
 .col2{
-    width:200px;
+    width:250px;
 }
