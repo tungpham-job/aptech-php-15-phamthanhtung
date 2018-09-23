@@ -7,31 +7,31 @@ body{
     height: 10vh;
 }
 .Body--height{
-    height: 65vh;
+    height: 80vh;
 }
 .Footer--height{
     height: 10vh;
 }
 .Header--texttitle{
     color: whitesmoke;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 .Header--textlink{
     color: whitesmoke;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 650;
 }
 .Body--texttitle{
     color: whitesmoke;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 .Body--text{
     color: whitesmoke;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 .Footer--text{
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
