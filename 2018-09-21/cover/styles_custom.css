@@ -32,6 +32,10 @@ body{
     font-size: 1.2rem;
 }
 .Footer--text{
+    color:gray;
+    font-size: 1rem;
+}
+.Footer--name{
     color: whitesmoke;
     font-size: 1rem;
 }
