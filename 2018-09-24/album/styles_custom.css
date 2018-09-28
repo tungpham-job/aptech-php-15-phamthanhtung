@@ -29,3 +29,7 @@ body{
     -moz-border-radius: 10px; /*Firefox*/
     -webkit-border-radius: 10px;  /*Chrome và Safary*/
 }
+
+.Pic--album {
+    font-size:60px;
+}
