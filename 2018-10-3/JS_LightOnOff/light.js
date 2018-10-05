@@ -8,7 +8,12 @@
 // }
 
 $(document).ready(function(){
-    $("button#buttonlight").click(function(){            
-        $("#light").attr("src","./on.png");
+    $("button#buttonlight").click(function(){
+        if ($("#light").attr("src") === "./on.png"){
+            $("#light").attr("src","./off.png");
+        }
+        else if ($("#light").attr("src") === "./off.png"){
+            $("#light").attr("src","./on.png");
+        }
     });
 });
