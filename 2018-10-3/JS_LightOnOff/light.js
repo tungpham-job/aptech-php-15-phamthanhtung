@@ -11,8 +11,7 @@ $(document).ready(function(){
     $("button#buttonlight").click(function(){
         if ($("#light").attr("src") === "./on.png"){
             $("#light").attr("src","./off.png");
-        }
-        else if ($("#light").attr("src") === "./off.png"){
+        }else{
             $("#light").attr("src","./on.png");
         }
     });

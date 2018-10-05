@@ -3,30 +3,30 @@
     <head>
         <link rel="stylesheet" href="styles.css"/>
         <link rel="stylesheet" href="styles_custom.css"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-        <script>
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("myBtn").style.display = "block";
-                } else {
-                    document.getElementById("myBtn").style.display = "none";
-                }
-            }
-
-            // When the user clicks on the Back to top, scroll to the top of the document
-            function topFunction() {
-                document.body.scrollTop = 0; // For Safari
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
-        </script>
-        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">     
     </head>
     <body>
         <div class="container-fluid Header--custom">
+            <div class="row w-100 h-100">
+                <div id="navbarContent" class="collapse" >
+                    <div class="d-flex">
+                        <div class="col-1"></div>
+                        <div class="col-7">
+                            <div class="bg-dark p-4">
+                            <h4 class="text-white">Collapsed content</h4>
+                            <span class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information. brand.</span>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="bg-dark p-4">
+                            <h4 class="text-white">Contact</h4>
+                            <span class="text-muted">Follow on Twitter<br/>Like on Facebook</span>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+            </div>
             <div class="row w-100 h-100">
                 <div class="col-1"></div>
                 <div class="col-5 d-flex align-items-center">
@@ -37,14 +37,8 @@
                 </div>
                 <div class="col-5 d-flex justify-content-end">
                     <div class="pos-f-t">
-                        <!-- <div class="collapse" id="navbarToggleExternalContent">
-                            <div class="bg-dark p-4">
-                            <h4 class="text-white">Collapsed content</h4>
-                            <span class="text-muted">Toggleable via the navbar brand.</span>
-                            </div>
-                        </div> -->
                         <nav class="navbar navbar-dark bg-dark">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <button id="bt_toggler" class="navbar-toggler" type="button" data-toggle="collapse" >
                             <span class="navbar-toggler-icon"></span>
                             </button>
                         </nav>
@@ -282,11 +276,15 @@
                     </p>
                 </div>
                 <div class="col-2 d-flex align-items-center justify-content-end">
-                    <a href="" id="myBtn" class="text-primary" onclick="topFunction()">Back to top</a>
+                    <a href="#" id="myBtn" class="text-primary">Back to top</a>
                 </div>
                 <div class="col-1"></div>
             </div>
         </div>
+
+        <!-- Include JS file here -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="album.js" charset="UTF-8"></script>
 
     </body>
 </html>
