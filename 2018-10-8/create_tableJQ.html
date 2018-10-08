@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+        <div id="here_table">
+            <table id="myTable">
+                <tr>
+                    <td>COL1</td>
+                    <td>COL2</td>
+                    <td>COL3</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <button id="btn1">Append Table</button>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    var row = $('<tr>').addClass('bar');
+                    for(i=0; i<3; i++){
+                        var cell = $('<td>').addClass('col').text('result ' + i);
+                        row.append(cell);
+                    }
+                    $('#myTable').append(row);
+                });
+            });
+        </script>
+    </body>
+</html>

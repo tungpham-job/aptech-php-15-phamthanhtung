@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
+<head>
+</head>
     <body>
 
-    <div id="div1">
-    </div>
+        <p>NAME:</p>
+        <ol>
+        </ol>
+        <button id="btn1">Append name</button>
+        <button id="btn2">Append OK</button>
+        <button id="btn3">Append NO</button>
 
-    <script>
-        var para1 = document.createElement("h1");
-        var node1 = document.createTextNode("Pham Thanh Tung");
-        para1.appendChild(node1);
-        var para2 = document.createElement("p");
-        var node2 = document.createTextNode("28 year old");
-        para2.appendChild(node2);
-        var element = document.getElementById("div1");
-        element.appendChild(para1);
-        element.appendChild(para2);
-    </script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("p").append(" <b>Pham Thanh Tung, </b>");
+                });
+        
+                $("#btn2").click(function(){
+                    $("ol").append("<li>OK</li>");
+                });
+        
+                $("#btn3").click(function(){
+                    $("ol").append("<li>NO</li>");
+                });
+            });
+        </script>
     </body>
+    
 </html>
