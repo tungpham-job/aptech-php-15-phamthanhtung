@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <div id="js-div-table"></div>
+  <button id="btn1">GET DATA BY AJAX</button>
+
+  <script>
+    $(document).ready(()=>{
+        $("#btn1").click(()=>{
+            $.get('http://laravel-crud.namcoi.com/api/v1/users',function(result){
+              var table = '<table id="js-table" class="table"></table>';
+              $('#js-div-table').append(table);
+              var thead = '<thead id="js-thead"></thead>';
+              $(thead).appendTo('#js-table');
+              var tr = '<tr id="js-tr-head"></tr>';
+              $(tr).appendTo('#js-thead');
+              var th = '<th>#</th><th>Name</th><th>Email</th>';
+              $(th).appendTo('#js-tr-head');
+              var tbody = ' <tbody></tbody>';
+              $('#js-thead').after(tbody);
+              
+              for (i = 0; i < result.users.length; i++) {
+              // Phan biet id cac row de append ra nhieu dong
+                var trBody = '<tr id="trBody-' + result.users[i].id + '"></tr>';
+                $(trBody).appendTo('tbody');
+                var thBody = ' <th>' + (i + 1) + '</th>';
+                var tdBody = '<td>' + result.users[i].name + '</td><td>' + result.users[i].email + '</td> ';
+                $('#trBody-' + result.users[i].id).append(thBody, tdBody);
+              }
+            });
+        });
+    });
+
+
+  </script>
+</body>
+
+</html>

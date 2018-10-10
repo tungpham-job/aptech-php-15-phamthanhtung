@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <div id="js-div-table"></div>
+  <button id="btngetpost">GET POST</button>
+
+  <script>
+    $(document).ready(()=>{
+        $("#btngetpost").click(()=>{
+            $.get('http://101.0.86.110:6699/api/v1/posts?page=2',function(response){
+              // console.log(response.data.posts.data[0].images);
+
+              var table = '<table id="js-table" class="table"></table>';
+              $('#js-div-table').append(table);
+              var thead = '<thead id="js-thead"></thead>';
+              $(thead).appendTo('#js-table');
+              var tr = '<tr id="js-tr-head"></tr>';
+              $(tr).appendTo('#js-thead');
+              var th = '<th>#</th><th>title</th><th>content</th><th>status</th><th>author_name</th><th>author_email</th><th>images_path</th><th>images_alt</th>';
+              $(th).appendTo('#js-tr-head');
+              var tbody = ' <tbody></tbody>';
+              $('#js-thead').after(tbody);
+              var data = response.data.posts.data;
+              for (i = 0; i < data.length; i++) {
+                var trBody = '<tr id="trBody-' + data[i].id + '"></tr>';
+                $(trBody).appendTo('tbody');
+                var thBody = ' <th>' + (i + 1) + '</th>';
+                var tdBody = '<td>' + data[i].title + '</td><td>' + data[i].content + '</td><td>' + data[i].status + '</td><td>' + data[i].author.name + '</td><td>' + data[i].author.email + '</td><td>' + data[i].images[0].path + '</td><td>' + data[i].images[0].alt +'</td> ';
+                $('#trBody-' + data[i].id).append(thBody, tdBody);
+              }
+            });
+        });
+    });
+
+
+  </script>
+</body>
+
+</html>
