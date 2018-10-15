@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles_custom.css"/>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <div class="container JV--box--gray rounded mb-3 p-2">
+    <div id="row-card" class="row JV--box--blue d-flex justify-content-around rounded m-2 p-2">
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(()=>{
+      $.get('http://101.0.86.110:6699/api/v1/posts?page=2',function(response){
+        console.log(response.data.posts.data[0].images);
+        var data = response.data.posts.data;
+        for (i = 0; i < data.length; i++) {
+          var cardform = '<div class="col-4 card flex-md-row shadow-sm JV--box--min border-info"><div id="card-' + data[i].id + '" class="card-body d-flex flex-column align-items-start w-100"></div></div>';
+          $('#row-card').append(cardform);
+          var title= '<h1 class="mb-0"><a class="text-dark" href="#">' + data[i].title + '</a></h1>';
+          var content = '<div class="text-muted">' + data[i].content + '</div>';
+          var image = '<img class="flex-auto d-none d-xl-block" data-src="" alt="' + data[i].images[0].alt +'" style="width: 50px; height: 70px;" src="' + data[i].images[0].path + '" data-holder-rendered="true">';
+          $('#card-' + data[i].id).append(title, content,image);
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
