@@ -27,3 +27,6 @@
     height: 40px;
     width: 40px;
 }
+.content--img img{
+    width: 100% !important;
+}
