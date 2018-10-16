@@ -1,0 +1,15 @@
+.Header{
+    &__Navigation{
+        &--size{
+            height: 30px;
+        }
+        &--bg{
+            background-color: red;
+        }
+    }
+    &__Content{
+        &--size{
+            height: 20px;
+        }
+    }
+}

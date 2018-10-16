@@ -17,7 +17,7 @@
 
   <script>
     $(document).ready(()=>{
-      $.get('https://101.0.86.110:6699/api/v1/posts?page=2',function(response){
+      $.get('http://101.0.86.110:6699/api/v1/posts?page=2',function(response){
         console.log(response.data.posts.data[0].images);
         var data = response.data.posts.data;
         for (i = 0; i < data.length; i++) {
