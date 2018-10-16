@@ -1,290 +1,281 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="stylesheet" href="styles_custom.css"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">     
-    </head>
-    <body>
-        <div class="container-fluid Header--custom">
-            <div class="row w-100 h-100">
-                <div id="navbarContent" style="display: none;" >
-                    <div class="d-flex">
-                        <div class="col-1"></div>
-                        <div class="col-7">
-                            <div class="bg-dark p-4">
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles_custom.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid Header--custom">
+        <div class="row h-100">
+            <div id="navbarContent" style="display: none;">
+                <div class="d-flex">
+                    <div class="col-1"></div>
+                    <div class="col-7">
+                        <div class="bg-dark p-4">
                             <h4 class="text-white">Collapsed content</h4>
                             <span class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information. brand.</span>
-                            </div>
                         </div>
-                        <div class="col-3">
-                            <div class="bg-dark p-4">
+                    </div>
+                    <div class="col-3">
+                        <div class="bg-dark p-4">
                             <h4 class="text-white">Contact</h4>
                             <span class="text-muted">Follow on Twitter<br/>Like on Facebook</span>
-                            </div>
                         </div>
-                        <div class="col-1"></div>
                     </div>
+                    <div class="col-1"></div>
                 </div>
             </div>
-            <div class="row w-100 h-100">
-                <div class="col-1"></div>
-                <div class="col-5 d-flex align-items-center">
-                    <p class="mb-0">
-                        <i class="fas fa-camera icon-white"></i>
-                        <label class="ml-1 h4 text-white">Album</label>
+        </div>
+        <div class="row h-100">
+            <div class="col-1"></div>
+            <div class="col-5 d-flex align-items-center">
+                <p class="mb-0">
+                    <i class="fas fa-camera icon-white"></i>
+                    <label class="ml-1 h4 text-white">Album</label>
+                </p>
+            </div>
+            <div class="col-5 d-flex justify-content-end">
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-dark bg-dark">
+                        <button id="bt_toggler" class="navbar-toggler" type="button" data-toggle="collapse">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid Content1--custom">
+        <div class="row w-100 h-100">
+            <div class="col-2"></div>
+            <div class="col-8 d-flex flex-column justify-content-center h-100 w-50">
+                <div class="d-flex justify-content-center mb-2 h2 font-weight-normal">
+                    <p>ALBUM ACTRESS
                     </p>
                 </div>
-                <div class="col-5 d-flex justify-content-end">
-                    <div class="pos-f-t">
-                        <nav class="navbar navbar-dark bg-dark">
-                            <button id="bt_toggler" class="navbar-toggler" type="button" data-toggle="collapse" onclick="showhide()" >
-                            <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-1"></div>
-            </div>
-        </div>
-
-        <div class="container-fluid Content1--custom"> 
-            <div class="row w-100 h-100">
-                <div class="col-2"></div>
-                <div class="col-8 d-flex flex-column justify-content-center h-100 w-50">
-                    <div class="d-flex justify-content-center mb-2 h2 font-weight-normal">
-                        <p>ALBUM ACTRESS
-                        </p>
-                    </div>
-                    <div class="text-center mb-3 h5 font-weight-light">
-                        <p>
-                            Here is a list of top asia drama actresses.
-                        </p>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <p>
-                            <button type="button" class="btn btn-primary btn font-weight-normal">Main call to action</button>
-                            <button type="button" class="btn btn-secondary btn font-weight-normal">Secondary action</button>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-2"></div>
-            </div> 
-        </div>
-
-        <div class="container-fluid Content2--custom">
-            <div class="row w-100">
-                <div class="col-1"></div>
-                <div class="col-10">
-                    <div class="card-group">
-                        <div class="card m-3 shadow-sm">
-                            <img class="Pic--album card-img-top" src="pic/1Jeon Ji-hyun.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Jeon Ji-hyun</h5>
-                                <p class="card-text">
-                                    1981
-                                    <br />
-                                    Korean actress
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 shadow-sm">
-                            <img class="Pic--album card-img-top" src="pic/2Kim Tae-hee.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Kim Tae-hee</h5>
-                                <p class="card-text">
-                                    1980
-                                    <br />
-                                    Korean actress
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 shadow-sm">
-                            <img class="Pic--album card-img-top" src="pic/3Park Min-young.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Park Min-young</h5>
-                                <p class="card-text">
-                                    1986
-                                    <br />
-                                    Korean actress
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1"></div>                
-            </div>
-            <div class="row w-100">
-                <div class="col-1"></div>
-                <div class="col-10">
-                    <div class="card-group">
-                        <div class="card m-3 shadow-sm">
-                            <img class="Pic--album card-img-top" src="pic/4Park Shin-hye.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Park Shin-hye</h5>
-                                <p class="card-text">
-                                    1990
-                                    <br />
-                                    Korean actress
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 shadow-sm">
-                            <img class="Pic--album card-img-top" src="pic/5Shin Se-kyung.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Shin Se-kyung</h5>
-                                <p class="card-text">
-                                    1990
-                                    <br />
-                                    Korean actress
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 shadow-sm">
-                            <img class="Pic--album card-img-top" src="pic/6Yoon Eun-hye.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Yoon Eun-hye</h5>
-                                <p class="card-text">
-                                    1984
-                                    <br />
-                                    Korean actress
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1"></div>                
-            </div>
-            <div class="row w-100">
-                <div class="col-1"></div>
-                <div class="col-10">
-                    <div class="card-group">
-                        <div class="card m-3 shadow-sm">
-                            <img class="Pic--album card-img-top" src="pic/7Yui Aragaki.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Yui Aragaki</h5>
-                                <p class="card-text">
-                                    1988
-                                    <br />
-                                    Japanese actress
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 shadow-sm">
-                            <img class="Pic--album card-img-top" src="pic/8Tsubasa Honda.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Tsubasa Honda</h5>
-                                <p class="card-text">
-                                    1992
-                                    <br />
-                                    Japanese actress
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card m-3 shadow-sm">
-                            <img class="Pic--album card-img-top" src="pic/9Tsuchiya Tao.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Tsuchiya Tao</h5>
-                                <p class="card-text">
-                                    1995
-                                    <br />
-                                    Japanese actress
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
-                                        <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1"></div>                
-            </div>
-        </div>
-
-        <div class="container-fluid Footer--custom">
-            <div class="row w-100 h-100">
-                <div class="col-1"></div>
-                <div class="col-8 d-flex align-items-center">
-                    <p class="text-secondary">
-                        Album example is © Bootstrap, but please download and customize it for yourself!
-                        <br />
-                        New to Bootstrap? 
-                        <a href="https://getbootstrap.com/" class="text-primary">Visit the homepage</a>
-                        , or read our
-                        <a 
-                        href="https://google.com/" class="text-primary">getting started guide</a>
+                <div class="text-center mb-3 h5 font-weight-light">
+                    <p>
+                        Here is a list of top asia drama actresses.
                     </p>
                 </div>
-                <div class="col-2 d-flex align-items-center justify-content-end">
-                    <a href="#" id="myBtn" class="text-primary">Back to top</a>
+                <div class="d-flex justify-content-center">
+                    <p>
+                        <button type="button" class="btn btn-primary btn font-weight-normal">Main call to action</button>
+                        <button type="button" class="btn btn-secondary btn font-weight-normal">Secondary action</button>
+                    </p>
                 </div>
-                <div class="col-1"></div>
             </div>
+            <div class="col-2"></div>
         </div>
+    </div>
 
-        <!-- Include JS file here -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="album.js" charset="UTF-8"></script>
+    <div class="container-fluid Content2--custom">
+        <div class="row w-100">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card-group">
+                    <div class="card m-3 shadow-sm">
+                        <img class="Pic--album card-img-top" src="pic/1Jeon Ji-hyun.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Jeon Ji-hyun</h5>
+                            <p class="card-text">
+                                1981
+                                <br /> Korean actress
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3 shadow-sm">
+                        <img class="Pic--album card-img-top" src="pic/2Kim Tae-hee.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Kim Tae-hee</h5>
+                            <p class="card-text">
+                                1980
+                                <br /> Korean actress
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3 shadow-sm">
+                        <img class="Pic--album card-img-top" src="pic/3Park Min-young.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Park Min-young</h5>
+                            <p class="card-text">
+                                1986
+                                <br /> Korean actress
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row w-100">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card-group">
+                    <div class="card m-3 shadow-sm">
+                        <img class="Pic--album card-img-top" src="pic/4Park Shin-hye.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Park Shin-hye</h5>
+                            <p class="card-text">
+                                1990
+                                <br /> Korean actress
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3 shadow-sm">
+                        <img class="Pic--album card-img-top" src="pic/5Shin Se-kyung.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Shin Se-kyung</h5>
+                            <p class="card-text">
+                                1990
+                                <br /> Korean actress
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3 shadow-sm">
+                        <img class="Pic--album card-img-top" src="pic/6Yoon Eun-hye.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Yoon Eun-hye</h5>
+                            <p class="card-text">
+                                1984
+                                <br /> Korean actress
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row w-100">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="card-group">
+                    <div class="card m-3 shadow-sm">
+                        <img class="Pic--album card-img-top" src="pic/7Yui Aragaki.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Yui Aragaki</h5>
+                            <p class="card-text">
+                                1988
+                                <br /> Japanese actress
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3 shadow-sm">
+                        <img class="Pic--album card-img-top" src="pic/8Tsubasa Honda.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Tsubasa Honda</h5>
+                            <p class="card-text">
+                                1992
+                                <br /> Japanese actress
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3 shadow-sm">
+                        <img class="Pic--album card-img-top" src="pic/9Tsuchiya Tao.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Tsuchiya Tao</h5>
+                            <p class="card-text">
+                                1995
+                                <br /> Japanese actress
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">View</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
 
-    </body>
+    <div class="container-fluid Footer--custom">
+        <div class="row w-100 h-100">
+            <div class="col-1"></div>
+            <div class="col-8 d-flex align-items-center">
+                <p class="text-secondary">
+                    Album example is © Bootstrap, but please download and customize it for yourself!
+                    <br /> New to Bootstrap?
+                    <a href="https://getbootstrap.com/" class="text-primary">Visit the homepage</a> , or read our
+                    <a href="https://google.com/" class="text-primary">getting started guide</a>
+                </p>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-end">
+                <a href="#" id="myBtn" class="text-primary">Back to top</a>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <!-- Include JS file here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="album.js" charset="UTF-8"></script>
+
+</body>
+
 </html>
